@@ -3,7 +3,7 @@ A lib for unit testing which takes a "stubs" approach; an alternative to the "mo
 
 ## What is it?
 
-I have created a new Java utility library (available at git@gitlab.smartergridsolutions.com:testutils/controllables.git) which auto generates, what I call "controllable" versions of classes/interfaces for use in testing.  There is now, also a Utilities module, which contains some utility classes for doing "controllable" like things for testing (without actually generating a Controllable class).
+A new Java utility library which auto generates, what I call "controllable" versions of classes/interfaces for use in testing.  There is now, also a Utilities module, which contains some utility classes for doing "controllable" like things for testing (without actually generating a Controllable class).
 
 ## What is a "controllable"?
 A controllable (i'm not putting the "" from here on in) is an implementation of a class or interface which allows the user to specify how the controlled methods behave (by setting how a call to a method will exit - e.g. by returning a given value, or by throwing a given Exception), and viewing the execution history of it (the history contains the call time, any supplied arguments, and how the method exited for each execution of the method).  If you are familiar with "Test Doubles" terminology (if you are not then i highly recommend this as a good read), then you can think of a controllable as sometinng like a programmable Stub.
